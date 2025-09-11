@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Show do Milhão</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="game">
+        <h1>Show do Milhão</h1>
+        <div id="pergunta"></div>
+        <div id="alternativas"></div>
+        <button id="proxima" style="display:none;">Próxima Pergunta</button>
+        <button id="ajuda5050">🧩 50/50</button>
+    </div>
+    
+
+<!-- Modal de confirmação -->
+<div id="modal-confirmacao" class="modal">
+  <div class="modal-content">
+    <p id="modal-text">Você confirma essa resposta?</p>
+    <button id="confirmar">Confirmar</button>
+    <button id="cancelar">Cancelar</button>
+  </div>
+</div>
+
+<!-- Modal resposta correta -->
+<div id="modal-correta" class="modal">
+  <div class="modal-content correta">
+    <h2>✅ Resposta Correta!</h2>
+    <button id="proxima-correta">Próxima Pergunta</button>
+  </div>
+</div>
+
+<!-- Modal resposta errada -->
+<div id="modal-errada" class="modal">
+  <div class="modal-content errada">
+    <h2>❌ Resposta Errada!</h2>
+    <button id="proxima-errada">Próxima Pergunta</button>
+  </div>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

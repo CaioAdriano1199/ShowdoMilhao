@@ -1,0 +1,17 @@
+[
+  {
+    "pergunta": "Qual é a capital do Brasil?",
+    "correta": "Brasília",
+    "erradas": ["Rio de Janeiro", "São Paulo", "Salvador"]
+  },
+  {
+    "pergunta": "Quem pintou a Mona Lisa?",
+    "correta": "Leonardo da Vinci",
+    "erradas": ["Michelangelo", "Van Gogh", "Pablo Picasso"]
+  },
+  {
+    "pergunta": "Qual o planeta mais próximo do Sol?",
+    "correta": "Mercúrio",
+    "erradas": ["Vênus", "Marte", "Saturno"]
+  }
+]
