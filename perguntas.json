@@ -1,17 +1,101 @@
 [
   {
-    "pergunta": "Qual é a capital do Brasil?",
-    "correta": "Brasília",
-    "erradas": ["Rio de Janeiro", "São Paulo", "Salvador"]
+    "pergunta": "O que significa a sigla EAP?",
+    "correta": "Estrutura Analítica do Projeto",
+    "erradas": [
+      "Estrutura Avançada de Planejamento",
+      "Estudo de Análise do Projeto",
+      "Esquema de Acompanhamento do Projeto"
+    ]
   },
   {
-    "pergunta": "Quem pintou a Mona Lisa?",
-    "correta": "Leonardo da Vinci",
-    "erradas": ["Michelangelo", "Van Gogh", "Pablo Picasso"]
+    "pergunta": "Qual documento é usado para detalhar o escopo do projeto?",
+    "correta": "Estrutura Analítica do Projeto (EAP/WBS)",
+    "erradas": [
+      "Termo de Encerramento",
+      "Matriz RACI",
+      "Curva S"
+    ]
   },
   {
-    "pergunta": "Qual o planeta mais próximo do Sol?",
-    "correta": "Mercúrio",
-    "erradas": ["Vênus", "Marte", "Saturno"]
+    "pergunta": "O que é o escopo do produto?",
+    "correta": "Funcionalidades e características que o produto final deve ter",
+    "erradas": [
+      "Lista de riscos do projeto",
+      "Cronograma de atividades",
+      "Custos estimados do produto"
+    ]
+  },
+  {
+    "pergunta": "Quando ocorre o fenômeno chamado scope creep?",
+    "correta": "Quando há aumento não controlado do escopo do projeto",
+    "erradas": [
+      "Quando há atrasos no cronograma",
+      "Quando os custos ficam acima do previsto",
+      "Quando a equipe não entende os requisitos"
+    ]
+  },
+  {
+    "pergunta": "O que significa a sigla PMBOK?",
+    "correta": "Project Management Body of Knowledge",
+    "erradas": [
+      "Project Management Bank of Knowledge",
+      "Program Manual Book of Knowledge",
+      "Project Model Based on Knowledge"
+    ]
+  },
+  {
+    "pergunta": "O que o escopo do projeto resume?",
+    "correta": "Objetivos, resultados, suposições, restrições e exclusões",
+    "erradas": [
+      "Apenas os custos do projeto",
+      "Apenas o cronograma",
+      "A equipe responsável pelo projeto"
+    ]
+  },
+  {
+    "pergunta": "Qual das alternativas abaixo faz parte dos elementos-chave do escopo do projeto?",
+    "correta": "Objetivos e metas",
+    "erradas": [
+      "Receita líquida da empresa",
+      "Estratégia de marketing",
+      "Lucro esperado do cliente"
+    ]
+  },
+  {
+    "pergunta": "O que deve ser feito em caso de mudança no escopo do projeto?",
+    "correta": "Atualizar e documentar as alterações, revisando a documentação",
+    "erradas": [
+      "Ignorar para não atrasar o cronograma",
+      "Transferir a responsabilidade para o cliente",
+      "Adicionar a mudança sem aprovação formal"
+    ]
+  },
+  {
+    "pergunta": "O que significa a técnica SMART, usada em objetivos de projetos?",
+    "correta": "Specific, Measurable, Achievable, Relevant, Time-bound",
+    "erradas": [
+      "Simple, Major, Accurate, Reliable, Tested",
+      "Strategic, Modern, Advanced, Robust, Tested",
+      "Standard, Modular, Agile, Realistic, Timed"
+    ]
+  },
+  {
+    "pergunta": "De acordo com o Guia PMBOK, qual destes é um processo necessário para gerenciar o escopo do projeto?",
+    "correta": "Coleta de requisitos",
+    "erradas": [
+      "Estimativa de custos",
+      "Controle de cronograma",
+      "Planejamento de aquisições"
+    ]
+  },
+  {
+    "pergunta": "Qual é o principal objetivo da Estrutura Analítica do Projeto (EAP)?",
+    "correta": "Facilitar o planejamento e o controle, dividindo o trabalho em partes menores",
+    "erradas": [
+      "Definir o orçamento do projeto",
+      "Elaborar o cronograma detalhado",
+      "Identificar os riscos do projeto"
+    ]
   }
 ]

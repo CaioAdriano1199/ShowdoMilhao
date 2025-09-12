@@ -3,37 +3,49 @@ body {
   background: #101030;
   color: #fff;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
-#game {
+/* Container do jogo */
+#jogo {
   max-width: 600px;
   margin: 50px auto;
   padding: 20px;
   background: #222;
   border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
+/* Alternativas */
 #alternativas button {
   display: block;
-  width: 100%;
-  margin: 10px 0;
+  max-width: 600px;   /* largura máxima */
+  width: 80%;          /* largura relativa */
+  margin: 10px auto;   /* centraliza */
   padding: 10px;
   font-size: 18px;
   cursor: pointer;
   border: none;
   border-radius: 5px;
+  background: #333;
+  color: #fff;
+  transition: background 0.3s, transform 0.2s;
 }
 
 #alternativas button:hover {
   background: #444;
+  transform: scale(1.02);
 }
 
 /* Base modal */
 .modal {
   display: none;
   position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: rgba(0,0,0,0.7);
   justify-content: center;
   align-items: center;
@@ -45,7 +57,8 @@ body {
   padding: 20px;
   border-radius: 10px;
   text-align: center;
-  width: 300px;
+  width: 320px;
+  max-width: 90%;
 }
 
 .modal-content button {
@@ -54,56 +67,87 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: opacity 0.3s;
 }
 
-/* Estilos específicos */
+.modal-content button:hover {
+  opacity: 0.8;
+}
+
+/* Resposta correta/errada */
 .correta {
   border: 3px solid green;
 }
-
 .errada {
   border: 3px solid red;
 }
+.correta h2 { color: green; }
+.errada h2 { color: red; }
 
-.correta h2 {
-  color: green;
-}
+/* Botões de confirmação */
+#confirmar, #proxima-correta { background: green; color: white; }
+#cancelar, #proxima-errada { background: red; color: white; }
 
-.errada h2 {
-  color: red;
-}
-
-#confirmar {
-  background: green;
-  color: white;
-}
-
-#cancelar {
-  background: red;
-  color: white;
-}
-
-#proxima-correta {
-  background: green;
-  color: white;
-}
-
-#proxima-errada {
-  background: red;
-  color: white;
-}
-
-#ajuda5050 {
+/* Botões de ajuda */
+.ajuda {
+  line-height: 30px;
+  height: 30px;
   background: orange;
   color: white;
   border: none;
   border-radius: 5px;
-  padding: 10px 15px;
+  padding: 0 15px;
   cursor: pointer;
-  margin-bottom: 15px;
+  margin: 5px;
+  white-space: nowrap;
+  text-align: center;
+  transition: background 0.3s, transform 0.2s;
 }
-
-#ajuda5050:disabled {
+.ajuda:hover:not(:disabled) { 
+  background: darkorange; 
+  transform: scale(1.05);
+}
+.ajuda:disabled {
   background: gray;
   cursor: not-allowed;
+}
+
+/* Status da pontuação */
+#status {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Tela inicial */
+#tela-inicial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #101030, #202060);
+}
+
+#tela-inicial h1 {
+  font-size: 48px;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 8px #000;
+}
+
+#tela-inicial button {
+  background: #ff8800;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  margin: 10px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+#tela-inicial button:hover {
+  background: #ffaa33;
+  transform: scale(1.05);
 }

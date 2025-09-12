@@ -2,48 +2,80 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Show do Milhão</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Show do Milhão</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div id="game">
-        <h1>Show do Milhão</h1>
-        <div id="pergunta"></div>
-        <div id="alternativas"></div>
-        <button id="proxima" style="display:none;">Próxima Pergunta</button>
-        <button id="ajuda5050">🧩 50/50</button>
-    </div>
-    
+<!-- Tela inicial -->
+<div id="tela-inicial">
+  <h1>Show do Milhão</h1>
+  <button id="iniciar">Iniciar Jogo</button>
+  <button id="instrucoesBtn">Instruções</button>
+</div>
 
-<!-- Modal de confirmação -->
-<div id="modal-confirmacao" class="modal">
+<!-- Modal de instruções -->
+<div id="modal-instrucoes" class="modal">
   <div class="modal-content">
-    <p id="modal-text">Você confirma essa resposta?</p>
-    <button id="confirmar">Confirmar</button>
-    <button id="cancelar">Cancelar</button>
+    <h2>Instruções</h2>
+    <ul>
+      <li>💡 <b>50/50:</b> Remove duas alternativas erradas (uma vez por jogo).</li>
+      <li>🐇 <b>Pular Pergunta:</b> Pula a pergunta atual (duas vezes por jogo).</li>
+      <li>🎓 <b>Pergunte aos Universitários:</b> Sugere uma alternativa com 75% de chance de acerto (uma vez por jogo).</li>
+      <li>✅ Ao confirmar a resposta, um modal mostrará se está correta ou errada.</li>
+      <li>❌ Se errar, o jogo reinicia do começo.</li>
+    </ul>
+    <button id="fecharInstrucoes">Fechar</button>
   </div>
 </div>
 
-<!-- Modal resposta correta -->
-<div id="modal-correta" class="modal">
-  <div class="modal-content correta">
-    <h2>✅ Resposta Correta!</h2>
-    <button id="proxima-correta">Próxima Pergunta</button>
+<!-- Container do jogo (inicialmente escondido) -->
+<div id="jogo" style="display:none;">
+  <div id="status">
+    <span>Pontuação: <span id="pontuacao">0</span></span>
+    <span>Valor da pergunta: <span id="valorPergunta">0</span></span>
+  </div>
+
+  <h2 id="pergunta"></h2>
+  <div id="alternativas"></div>
+
+  <div id="botoes-ajuda">
+    <button class="ajuda" id="ajuda5050">💡 50/50</button>
+    <button class="ajuda" id="pular">🐇 Pular Pergunta (2)</button>
+    <button class="ajuda" id="universitarios">🎓 Pergunte aos Universitários</button>
   </div>
 </div>
 
-<!-- Modal resposta errada -->
-<div id="modal-errada" class="modal">
-  <div class="modal-content errada">
-    <h2>❌ Resposta Errada!</h2>
-    <button id="proxima-errada">Próxima Pergunta</button>
+
+
+  <!-- Modal de confirmação -->
+  <div id="modal-confirmacao" class="modal">
+    <div class="modal-content">
+      <p id="modal-text">Você confirma essa resposta?</p>
+      <button id="confirmar">Confirmar</button>
+      <button id="cancelar">Cancelar</button>
+    </div>
   </div>
-</div>
+
+  <!-- Modal resposta correta -->
+  <div id="modal-correta" class="modal">
+    <div class="modal-content correta">
+      <h2>✅ Resposta Correta!</h2>
+      <button id="proxima-correta">Próxima Pergunta</button>
+    </div>
+  </div>
+
+  <!-- Modal resposta errada -->
+  <div id="modal-errada" class="modal">
+    <div class="modal-content errada">
+      <h2>❌ Resposta Errada!</h2>
+      <button id="proxima-errada">Recomeçar</button>
+    </div>
+  </div>
 
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
