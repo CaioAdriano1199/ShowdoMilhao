@@ -7,7 +7,7 @@ let perguntas = [];
 let perguntasEmbaralhadas = [];
 let indiceAtual = 0;
 let pontuacao = 0;
-let valoresPerguntas = [1000, 2000, 5000, 10000, 20000, 30000, 40000, 50000, 100000, 200000, 300000, 400000, 500000, 750000, 1000000];
+let valoresPerguntas = [1000, 5000, 10000, 30000, 50000, 100000, 200000, 400000, 500000, 750000, 1000000];
 let respostaSelecionada = null;
 let respostaCorreta = null;
 let ajudaUsada = false;
@@ -89,7 +89,7 @@ function mostrarPergunta() {
 function abrirModalConfirmacao(resp, correta) {
   respostaSelecionada = resp;
   respostaCorreta = correta;
-  document.getElementById("modal-text").textContent = `Você confirma a resposta: "${resp}"?`;
+  //document.getElementById("modal-text").textContent = `Você confirma a resposta: "${resp}"?`;
   modalConfirmacao.style.display = "flex";
 }
 
